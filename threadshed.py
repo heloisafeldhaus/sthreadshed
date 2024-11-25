@@ -112,7 +112,6 @@ daily_sales_replaced = daily_sales.replace(";,;", ";").replace("\n", "")
 
 daily_transactions = daily_sales_replaced.split(",")
 
-daily_transactions_split = []
 transactions_clean = []
 for item in daily_transactions:
   new_list = item.strip().split(";")
