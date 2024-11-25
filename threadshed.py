@@ -128,7 +128,7 @@ for item in transactions_clean:
   thread_sold.append([item[2]])
 
 total_sales = 0
-new_list3 = []
+
 for sale in sales:
   total_sales += float(sale[0].strip("$"))
 print(f'Total Sales: {total_sales:.2f}')
@@ -140,8 +140,8 @@ for item in thread_sold:
     thread_sold_split.append(color)
 
 def color_count(color):
-  new_list4 = thread_sold_split.count(color)
-  return new_list4
+  new_list2 = thread_sold_split.count(color)
+  return new_list2
 
 colors = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
 for color in colors:
